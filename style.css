@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(36,23,0);
+    background: linear-gradient(90deg, rgba(36,23,0,1) 0%, rgba(2,0,23,1) 100%);
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    font-size: 56px;
+    height: 10vh;
+    color: white;
+}
+
+.slide{
+    display: flex;
+    align-items: center;
+}
+
+.otherItems{
+    background-color: red;
+    width: 20vw;
+    height: 20vh;
+    overflow: hidden;
+}
+
+
+
+.container-slide{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    height: 50vh;
+    margin: 10vh auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.247);
+}
+
+.container-items{
+    display: flex;
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.item{
+    width: 50vw;
+    height: 50vh;
+    transition: all 0.3s;
+}
+
+.item img{
+    width: 50vw;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+.item:first-child{
+    margin-left: -100%;
+
+}
+
+
+.action-button{
+    opacity: 10%;
+    font: bold 30px Arial;
+    z-index: 1;
+    display: flex;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.action-button:hover{
+    user-select: all;
+    opacity: 80%;
+    cursor: pointer;
+}
